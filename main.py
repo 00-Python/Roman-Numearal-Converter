@@ -12,13 +12,6 @@ class Solution:
             else:
                 break
 
-        for double in s:
-            if double in s:
-                split = [*double]
-                s = s.replace(split[0], '')
-            else:
-                break
-
 
         for x in range(0, length):
             if x < length-1:
@@ -31,6 +24,7 @@ class Solution:
                 elif broke_down[x] == 'C' and broke_down[x + 1] == 'D' or broke_down[x] == 'C' and broke_down[x + 1] == 'M':
                     total.append(-100)
                     total.remove(100)
+        
         return sum(total)
 
 
